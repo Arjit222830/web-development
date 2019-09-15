@@ -1,0 +1,226 @@
+.container-fluid 
+{
+  position: relative;
+  text-align: center; 
+}
+
+.leftArrow
+{
+    width: 50px;
+    height: 72px;
+    background-color: #00000047;
+    position: absolute;
+    left: 0px;
+    z-index=1;
+    transition: background 0.5s;
+    top: 45%;
+    transform: translateY(-50%);
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.rightArrow
+{
+    width: 50px;
+    height: 72px;
+    background-color: #00000047;
+    position: absolute;
+    right: 0px;
+    z-index=1;
+    transition: background 0.5s;
+    top: 45%;
+    transform: translateY(-50%);
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.leftArrow:hover
+{
+    background-color:black;
+    cursor: pointer;
+}
+
+.rightArrow:hover
+{
+    background-color:black;
+    cursor: pointer;
+}
+
+.arrow
+{
+    display:inline-block;
+    border: 3px solid white;
+    width: 10px;
+    height: 10px;
+    border-left: none;
+    border-bottom: none;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+
+.arrowLeft
+{
+    transform: rotateZ(-135deg);
+}
+
+.arrowRight
+{
+    transform: rotatez(45deg);
+}
+
+.captionHolder
+{
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+    color: white;
+    font-family: sans-serif;
+    font-size:20px;
+    text-align: center;
+    width:100%;
+    background: #00000047; 
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+}
+
+.captionText
+{
+    margin:0px;
+}
+
+#carousel
+{
+    height:850px;
+}
+
+.imageHolder
+{
+    position: absolute;
+    z-index: -1;
+    top:0:
+    bottom:0;
+    left:0;
+    right:0;
+    opacity:0;
+    
+}
+
+#dotsContainer
+{
+    width: 100%;
+    height:10%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.dots
+{
+    display: inline-block;
+    border-style: solid;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.dots:hover, .dots.active
+{
+    background-color: black;
+}
+p
+{
+    font-family: Courier New;
+}
+
+#playPauseBtn
+{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    z-index: 5;
+    margin: 90px;
+    cursor: pointer;
+    background-image: url(play.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-fluid .leftCurrentSlide
+{
+    animation-name: moveLeftCurrent;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forward;
+}
+
+@keyframes moveLeftCurrent
+{
+    from
+    {
+        margin-left:0;
+        opacity:1;
+    }
+    to
+    {
+        margin-left:-100%;
+        opacity:1;
+    }
+    }
+}
+
+.container-fluid .leftNextSlide
+{
+    animation-name: moveLeftNext;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forward;
+}
+
+@keyframes moveLeftNext
+{
+    from
+    {
+        margin-left: 100%;
+        opacity:1;
+    }
+    to
+    {
+        margin-left:0;
+        opacity:1;
+    }
+}
+
+.grid-container
+{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-top:50px;
+  grid-gap: 50px;
+}
+
+.small
+{
+    height: 350px;
+    width: 400px;
+}
+
+.medium
+{
+    height: 750px;
+    width: 1200px;
+}
+
+.large
+{
+    width: 1300px;
+    height: 800px; 
+}
