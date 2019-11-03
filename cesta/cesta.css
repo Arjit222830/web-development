@@ -1,0 +1,135 @@
+@font-face {
+font-family: 'Bradley Hand Negrita';
+font-style: normal;
+font-weight: normal;
+src:  url('./bradley-hand-2-cufonfonts-webfont/BradleyHandITCTT-Bold.woff') format('woff');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Neuton&display=swap');
+
+body
+{
+    padding:0!important;
+    margin:0!important;
+}
+
+#navbar
+{
+    background-color: rgba(245, 172, 35, 0.849);
+}
+
+.nav-link,.navbar-brand
+{
+    color: white!important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown  .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+#doc_btn
+{
+    background-color: transparent;
+    color: rgb(20, 79, 206);
+    border-color: rgb(20, 79, 206);
+    margin-left: 1vw;
+    margin-top: 2vh;
+}
+
+#doc_btn:hover
+{
+    background-color: rgb(20, 79, 206);
+    color: white;
+}
+
+.overlapped_images
+{
+    width: 200px;
+    height:280px;
+    transform: rotateZ(67deg) skewX(40deg) skewY(-40deg);
+    padding:0!important;
+    border-style:none!important;
+}
+
+.overlapped_images:hover
+{
+    transform: rotateZ(67deg) skewX(40deg) skewY(-40deg) scale(1.1);
+    box-shadow: 3vw 3vh rgba(196, 182, 182, 0.411);
+    animation-name: sliding;
+    animation-duration: 1s;
+}
+
+i
+{
+    font-size: 5vw;
+    margin-left: 2vw;
+    margin-bottom:5vh;
+    animation: icons 1s linear infinite;
+    animation-play-state: paused;
+}
+
+i:hover
+{
+    animation-play-state: running;
+}
+
+@keyframes icons {
+    50% { 
+        font-size: 5.4vw;
+    }
+
+    100%{
+        font-size: 5vw;
+    }
+}
+
+h5
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+g
+{
+    font-family: 'Neuton', serif;
+    font-size: 35px;
+}
+
+.fa-instagram
+{
+    background-image: linear-gradient(45deg,orange,red 50%,rgb(238, 69, 238));
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-reddit
+{
+    background-image: linear-gradient(to bottom,orange,red);
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#image02,#image03,#image02-1,#image02-2,#image04,#image05,#image06,#image07,#image08,#image09,#image10,#image11,#image12,#image13,#image14
+{
+    width: 80vw;
+    height: 30vh;
+}
+
+@media only screen and (min-width: 550px) {
+    .nav-link
+    {
+        margin-left: 3vw;
+    }
+
+    #image02,#image03,#image02-1,#image02-2,#image04,#image05,#image06,#image07,#image08,#image09,#image10,#image11,#image12,#image13,#image14
+    {
+        width: 33vw!important;
+        height: 45vh!important;
+    }
+}
+
