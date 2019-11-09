@@ -1,45 +1,29 @@
-var i01= document.getElementById('image01');
-var data= document.getElementById('data');
 var navbar= document.getElementById('navbar');
-var navLink= document.getElementsByClassName('nav-link');
-var navBrand= document.getElementsByClassName('navbar-brand');
-var overlappedImages= document.getElementsByClassName('overlapped)images');
 
-var vw,vh,zI;
-var ar=[];
-for(var i=0;i<overlappedImages.length;i++)
-    ar.push(overlappedImages[i]);
+var x;
 
-$('.overlapped_images').hover(function(){
-    zI = $( this ).css( "zIndex");
-    $(this).css("zIndex", "2");
-    }, function(){
-    $(this).css("zIndex", zI);
-});
+window.onscroll = function() {
+    scroll();
+};
 
-window.onresize= ()=>{
+window.onresize= function(){
     resize();
- }
+}
 
-function resize(){
-    if(window.innerWidth<550)
+function scroll() {
+    if (document.body.scrollTop >= x)
     {
-        vw=65;
-        vh=15;
-        i01.style.width=vw*innerWidth/100;
-        i01.style.height=vh*innerHeight/100;
-        data.style.width=90*innerWidth/100;
-        console.log(data.style.marginLeft);
+        navbar.style.backgroundImage= "linear-gradient( 112.2deg,  rgba(86,223,223,1) 4.7%, rgba(2,28,186,1) 110.1% )";
+        console.log("hello");
     }
     else
-    {
-        vw=35;
-        vh=17;
-        i01.style.width=vw*innerWidth/100;
-        i01.style.height=vh*innerHeight/100;
-        data.style.width=50*innerWidth/100;
-        console.log(data.style.marginLeft);
-    }
+        navbar.style.backgroundImage= "";
+}
+
+function resize(){
+    var vh= 40;
+    x= window.innerHeight*vh/100;
 }
 
 resize();
+
