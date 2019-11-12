@@ -13,6 +13,11 @@ src:  url('./bradley-hand-2-cufonfonts-webfont/BradleyHandITCTT-Bold.woff') form
     background-image: linear-gradient( 112.2deg,  rgba(86,223,223,1) 4.7%, rgba(2,28,186,1) 110.1% );
 }
 
+#gap
+{
+    margin-bottom: 10vh;
+    margin-top:0vh;
+}
 .non-active:hover
 {
     color: rgba(31, 29, 29, 0.788)!important;
@@ -127,14 +132,15 @@ h
         height: 200px;
     }
 
+    #gap
+    {
+        margin-top: 10vh;
+        margin-bottom: 0vh;
+    }
+
     #image02,#image03,#image02-1,#image02-2,#image04,#image05,#image06,#image07,#image08,#image09,#image10,#image11,#image12,#image13,#image14
     {
         width: 33vw!important;
         height: auto!important;
     }
-}
-
-.jumbotron
-{
-    
 }
