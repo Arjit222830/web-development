@@ -13,7 +13,7 @@ window.onresize= function(){
 function scroll() {
     if (document.body.scrollTop >= x)
     {
-        navbar.style.backgroundImage= "linear-gradient( 112.2deg,  rgba(86,223,223,1) 4.7%, rgba(2,28,186,1) 110.1% )";
+        navbar.style.backgroundImage= "linear-gradient( 112.2deg,  rgba(2,28,186,1) 4.1%, rgba(86,223,223,1) 110.7%)";
         navbar.style.opacity= ".95";
     }
     else
@@ -24,7 +24,7 @@ function scroll() {
 }
 
 function resize(){
-    var vh= 40;
+    var vh= 35;
     x= window.innerHeight*vh/100;
 }
 

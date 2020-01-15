@@ -17,6 +17,7 @@ src:  url('./bradley-hand-2-cufonfonts-webfont/BradleyHandITCTT-Bold.woff') form
 {
     margin-bottom: 10vh;
     margin-top:0vh;
+    margin-left: 2vw;
 }
 .non-active:hover
 {
@@ -39,14 +40,6 @@ src:  url('./bradley-hand-2-cufonfonts-webfont/BradleyHandITCTT-Bold.woff') form
     color: white;
 }
 
-#info
-{
-    margin-left:5vw;
-    background-color:rgba(20, 79, 206, 0.096);
-    border-radius:2vh;
-    box-sizing:border-box;
-    padding:20px 30px;
-}
 
 .fab
 {
@@ -120,6 +113,24 @@ h
     height: 35vh;
 }
 
+#lottie-image
+{
+    height: 60vh;
+}
+
+#python-photo
+{
+    width: 80vw;
+}
+
+#info
+{
+    background-color:rgba(20, 79, 206, 0.096);
+    border-radius:2vh;
+    box-sizing:border-box;
+    padding:20px 30px;
+}
+
 @media only screen and (min-width: 550px) {
     .nav-link
     {
@@ -128,8 +139,8 @@ h
 
     #youtube
     {
-        width: 300px;
-        height: 200px;
+        width: 350px;
+        height: 225px;
     }
 
     #gap
@@ -140,7 +151,19 @@ h
 
     #image02,#image03,#image02-1,#image02-2,#image04,#image05,#image06,#image07,#image08,#image09,#image10,#image11,#image12,#image13,#image14
     {
-        width: 33vw!important;
+        width: 30vw!important;
         height: auto!important;
+    }
+
+    
+    #lottie-image
+    {
+        width: 350px
+        height:250px;
+    }
+
+    #python-photo
+    {
+        width: 32vw;
     }
 }
