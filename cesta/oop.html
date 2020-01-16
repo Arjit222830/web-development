@@ -23,69 +23,56 @@
     
     <body class="container-fluid">
 
-        <div class="text-center" id="head"">
-            
+        <div class="text-center" id="head">
+
             <div class="container-fluid fixed-top">
-                    <nav id="navbar" class="navbar">
-                        <a class="navbar-brand" href="#">
-                            <i class='fas fa-home active' style='margin-top:2vh;font-size:36px;color:white'></i>
-                        </a>
-                    </nav>
-                </div>
-                <h1 style="color: white;padding-top:12vh">CESTA SOCIETY</h1>
-                <h4 style="color: white">"The only truth about future is Tech"</h4>
+                <nav id="navbar" class="navbar">
+                    <a class="navbar-brand" href="./syllabus.html">
+                        <i class='fas fa-home non-active' style='margin-top:2vh;font-size:36px;color:white'></i>
+                    </a>
+                </nav>
+            </div>
+            <h1 style="color: white;padding-top:12vh">CESTA SOCIETY</h1>
+            <h4 style="color: white">"The only truth about future is Tech"</h4>
 
         </div>
-        
-        <div class="container text-center">
 
-            <div class="row" style="padding-top:10vh;margin-bottom: 10vh">
-                <div class="col-sm-5" style="padding-top:9vh">
-                    <img id="python-photo" src="Python.svg"><br>
-                    <a href="https://docs.python.org/3/" target="_blank">
-                        <button id="doc_btn" class="btn btn-primary shadow-none text-center">Documentation</button>
-                    </a>
+        <div class="container text-center" style="margin-top:10vh">
+            <div class="row" style="margin-bottom: 10vh">
+
+                <div class="col-sm-5">
+                    <lottie-player id="lottie-image"
+                        src="oops.json"  background="transparent"  speed="1" loop autoplay >
+                    </lottie-player>
                 </div>
 
-                <div style="margin-left:5vw" class="col-sm-6 text-center">
-                   <g>Syllabus</g>
-                   <div style="margin-left:10vw" class="text-left">
-                        <a href="./introduction.html" target="_blank"><h>1.Introduction to Python</a></h><br>
-                        <a href="./basic.html" target="_blank"><h>2.Basic Concepts</a></h><br>
-                        <a href="./structures.html" target="_blank"><h>3.Data Structures</a></h><br>
-                        <a href="oop.html" target="_blank"><h>4.OOPs Concept</a></h><br>
-                        <a href="./networking.html" target="_blank"><h>5.Networking</a></h><br>
-                        <a href="./threading.html"><h>6.Threading</a></h><br>
-                        <a href="./future.html" target="_blank"><h>7.Future of Python</a></h>
+                <div id="info" class="col-sm-6 text-center">
+                   <g>Object-Oriented Programming</g>
+                   <div style="text-align:justify;">
+                        <h style="color:black;">
+                            Python is a multi-paradigm programming language. 
+                            One of the popular approach to solve a programming problem is by creating objects.
+                            This is known as Object-Oriented Programming (OOP).
+                            OOP models real-world entities as software objects, which have some data associated with them and can perform certain functions.
+                            The key takeaway is that objects are at the center of the object-oriented programming paradigm, not only representing the data, as in procedural programming, but in the overall structure of the program as well.
+                            The basic principle of OOPS are: Abstraction, Inheritance, Encapsulation & Polymorphism.
+                        </h>
                     </div>
                 </div>
             </div>
 
-            <lottie-player id="data" src="./book.json"  background="transparent"  speed="1"  style="height:45vh;"  loop autoplay >
-            </lottie-player> 
+            <iframe id="youtube" style="margin-top:10vh" src="https://www.youtube.com/embed/qiSCMNBIP2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br/>
 
-            <div class="text-center" style="margin-top:15vh">
-                <i class="fab fa-google" style="color: rgb(175, 36, 36)"></i>
-                <i class="fab fa-spotify" style="color: rgb(137, 212, 25)"></i>
-                <i class="fab fa-facebook-square" style="color:rgb(32, 40, 143) "></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-uber" style="color:rgb(0, 0, 0)"></i>
-                <i class="fab fa-pinterest" style="color: rgb(212, 27, 27)"></i>
-                <i class="fab fa-reddit"></i>
-            </div>
-
-            <a href="./introduction.html">
-                <button id="next_btn" style="width:100px" class="btn btn-primary shadow-none text-center">Next</button>
+            <a href="./networking.html">
+                <button style="margin-top:15vh;width:100px" id="next_btn" class="btn btn-primary shadow-none text-center">Next</button>
             </a>
-
         </div>
-
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
         <script src="./cesta.js"></script>
-
     </body>
 
     <footer class="container-fluid" style="margin-top:7vh">
